@@ -1,0 +1,209 @@
+body{
+    background-color: rgb(182, 165, 165);
+}
+.top-container{
+ display: flex;
+ height: 100vh;
+ 
+                            /* header */
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    animation: header 2s; 
+}
+.img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#images{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.button >.btn{
+    background-color: blueviolet;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 35px;
+}
+.icon{
+    font-size: 35px;
+    visibility: hidden;
+}
+
+
+/*projects*/
+#project{
+      min-height: 100vh;
+    display: flex;
+    align-items: center; 
+}
+/* .projects{
+   min-height: 100vh;
+    display: flex;
+    align-items: center;  
+   
+} */
+.box{
+    width: 350px;
+    height: 380px;
+}
+.box:hover{
+     transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(107, 105, 105, 0.5);
+}
+.box:hover>.icon{
+    visibility: visible;
+}
+
+
+/*skill*/
+
+.skill-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+.skill-container .row{
+    width: 100%;
+}
+
+
+
+.skill-label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.percent{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(230, 242, 242);
+    margin-bottom: 20px;
+}
+
+/*skill-2*/
+.percent-85{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(230, 242, 242);
+    
+}
+.percent-skill-85{
+    width: 85%;
+    height: 10px;
+    background-color: aqua;
+}
+.percent-3{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(230, 242, 242);
+}
+.percent-skill-3{
+    width: 75%;
+    height: 10px;
+    background-color: aqua;
+}
+.skill-label-back{
+    display: flex;
+    justify-content: space-between;
+}
+.percent-skill-80{
+    width: 80%;
+    height: 10px;
+    background-color: aqua;
+    
+}
+.percent-skill-75{
+    width: 75%;
+    height: 10px;
+    background-color: aqua;
+    
+}
+.percent-skill-95{
+    width: 95%;
+    height: 10px;
+    background-color: aqua;
+    
+}
+.percent-skill{
+    animation: percent 2s ease-in-out forwards;
+}
+
+.contact-icon{
+    font-size: 50px;
+}
+
+/* percentage ski ll*/
+.percent-skill-75{max-width: 75%;}
+.percent-skill-80{max-width: 80%;}
+.percent-skill-95{max-width: 95%;}
+.percent-skill-85{max-width: 85%;}
+
+@keyframes percent{
+   from{width: 0;}
+   to{width: 100;}
+}
+
+.text{
+    width: 350px;
+    height: 30px;
+    margin-left: 60px;
+}
+.contact{
+    margin-top: 150px;
+}
+.form-group>label{
+    margin-right: 20px;
+}
+.form-group{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.contact-info{
+    background-color: antiquewhite;
+}
+
+
+#contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-content{
+    display: flex;
+    margin-left: 35px;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+.email{
+    width: 350px;
+    height: 100px;
+    margin-left: 60px;
+}
+
+@keyframes header{
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(0%);
+    }
+}
